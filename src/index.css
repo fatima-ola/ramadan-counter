@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ramadan img{
+    width: 100%;
+    height: 350px;
+   
 }
+
+.count-body{
+    text-align:center;
+    background-color: #2F3366;
+    color:#fff;
+    padding: 0;
+  }
+  .count-body-2{
+    padding: 50px;
+    margin: auto;
+  }
+  .count-body > p:first-child{
+    font-size:2rem;
+  }
+  
+  .count-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  @media (max-width: 450px) {
+    .count-container{
+      flex-direction: column;
+      gap: 0.5px;
+    }
+  }
+  
+  .count-content > div:first-child {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    color:#2F3366;
+    font-size:2rem;
+    padding:1.2rem ;
+    border-radius:5%;
+  }
+  #count-down a{
+    text-decoration: none;
+  }
+  @media (min-height:1024px){
+    .count-body{
+      height:55vh;
+    }
+  }
+  @media (min-height:1036px){
+    .count-body{
+      height:60vh;
+    }
+  }
